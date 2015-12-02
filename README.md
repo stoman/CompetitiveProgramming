@@ -7,7 +7,7 @@ This repository contains some submissions for competitive programming problems I
 First, install the following packages:
 
 ```
-apt-get install make automake g++ libboost-dev libboost-regex-dev libgmp-dev python-plastex
+apt-get install make automake g++ libboost-dev libboost-regex-dev libgmp-dev python-plastex python-yaml
 ```
 
 Afterwards, execute `make` in the problemtools subdirectory to install the problemtools. Executing `make` in each problem subdirectory checks each problem.
