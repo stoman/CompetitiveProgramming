@@ -3,4 +3,4 @@
 all: solvemefirst
 
 solvemefirst: 
-	../problemtools/src/verifyproblem.py -p config submissions -l warning solvemefirst
+	../problemtools/src/verifyproblem.py -p config submissions -l debug solvemefirst
