@@ -1,3 +1,3 @@
 [submodule "problemtools"]
 	path = problemtools
-	url = https://github.com/Kattis/problemtools.git
+	url = https://github.com/stoman/problemtools.git
