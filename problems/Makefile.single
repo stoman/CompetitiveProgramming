@@ -1,0 +1,2 @@
+test:
+	../../problemtools/src/verifyproblem.py $(ARGS) -p config submissions -l warning .
