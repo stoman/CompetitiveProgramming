@@ -1,4 +1,5 @@
-PROBLEMS = solvemefirst timeconversion
+PROBLEMS := $(wildcard *)
+PROBLEMS := $(filter-out template Makefile, $(PROBLEMS))
 
 all: $(PROBLEMS)
 .PHONY: all $(PROBLEMS)
