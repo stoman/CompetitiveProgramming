@@ -1,6 +1,7 @@
+PROBLEMS = solvemefirst timeconversion
 
-all: solvemefirst
-.PHONY: all
+all: $(PROBLEMS)
+.PHONY: all $(PROBLEMS)
 
-solvemefirst: 
-	../problemtools/src/verifyproblem.py -p config submissions -l warning solvemefirst
+$(PROBLEMS): 
+	../problemtools/src/verifyproblem.py -p config submissions -l warning $@
