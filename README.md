@@ -1,6 +1,6 @@
 # About
 
-This repository contains some submissions for competitive programming problems I solved. All problems use the [Kattis problem format](http://www.problemarchive.org/wiki/index.php/Problem_Format) to allow the use of the [problemtools](https://github.com/Kattis/problemtools). Most problems just contain sample data and my submissions, other data as the problem text or secret test data are only availablefor selected problems.
+This repository contains some submissions for competitive programming problems I solved. All problems use the [Kattis problem format](http://www.problemarchive.org/wiki/index.php/Problem_Format) to allow the use of the [problemtools](https://github.com/Kattis/problemtools). Most problems just contain sample data and my submissions, other data as the problem text or secret test data are only availabl efor selected problems.
 
 # Build [![Build Status](https://travis-ci.org/stoman/competitive-programming.svg)](https://travis-ci.org/stoman/competitive-programming)
 
@@ -8,7 +8,7 @@ This repository contains some submissions for competitive programming problems I
 
 # Installation
 
-First, install the following packages:
+This repository contains he Kattis problemtools as submodule. To use them install the following packages:
 
 ```
 apt-get install make automake g++ libboost-dev libboost-regex-dev libgmp-dev python-plastex python-yaml
