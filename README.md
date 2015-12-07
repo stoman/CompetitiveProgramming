@@ -10,7 +10,7 @@ Do not use the submissions if you want to solve the problems yourself, but feel 
 
 # Installation
 
-This repository contains the [Kattis problemtools](https://github.com/Kattis/problemtools as a submodule. To use them install the following packages:
+This repository contains the [Kattis problemtools](https://github.com/Kattis/problemtools) as a submodule. To use them install the following packages:
 
 ```
 apt-get install make automake g++ libboost-dev libboost-regex-dev libgmp-dev python-plastex python-yaml
