@@ -1,0 +1,7 @@
+name: Hole in One
+source: Northwestern Europe Regional Contest (NWERC) 2015
+source_url: http://www.nwerc.eu
+author: Paul Wild
+license: cc by-sa
+keywords: medium - geometry, brute force
+validator_flags: float_absolute_tolerance 1e-5
