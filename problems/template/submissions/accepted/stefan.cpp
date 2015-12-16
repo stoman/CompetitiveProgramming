@@ -2,7 +2,9 @@
 
 #include <stdio.h>
 #include <string.h>
-#include <stdlib.h>
+#include <algorithm>
+
+using namespace std;
 
 int main() {
 	int t;
