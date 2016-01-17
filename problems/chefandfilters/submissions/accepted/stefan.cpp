@@ -47,7 +47,7 @@ int main() {
     		    }
 		    }
 		}
-		printf("%lld\n", r[0] ? p : 0);
+		printf("%I64d\n", r[0] ? p : 0);
 	}
 	return 0;
 }

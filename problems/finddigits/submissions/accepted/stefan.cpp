@@ -11,7 +11,7 @@ int main() {
 	scanf("%d", &t);
 	for (int i = 0; i < t; ++i) {
 		long long n;
-		scanf("%lld", &n);
+		scanf("%I64d", &n);
 		int r = 0;
 		long long tn = n;
 		while (tn > 0) {

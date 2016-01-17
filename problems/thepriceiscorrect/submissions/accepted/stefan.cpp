@@ -28,7 +28,7 @@ int main() {
 			r += right - left + 1;
 			sum -= b[left];
 		}
-		printf("Case #%d: %lld\n", i+1, r);
+		printf("Case #%d: %I64d\n", i+1, r);
 	}
 	return 0;
 }

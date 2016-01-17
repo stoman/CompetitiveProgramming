@@ -11,7 +11,7 @@ int main() {
 	scanf("%d", &t);
 	for (int i = 0; i < t; ++i) {
         long long n, m, z, l, r, b;
-		scanf("%lld %lld %lld %lld %lld %lld", &n, &m, &z, &l, &r, &b);
+		scanf("%I64d %I64d %I64d %I64d %I64d %I64d", &n, &m, &z, &l, &r, &b);
 		long long seated = 0, a = 0;
 
 		//even number of seats
@@ -36,13 +36,13 @@ int main() {
 	        long long ls = min(l, m-1);
 	        l -= ls;
 	        taken += ls;
-    		//printf("-> ls %lld\n", ls);
+    		//printf("-> ls %I64d\n", ls);
 	        
 	        //Rs from the right, leave one free
             long long rs = min(m-taken-1, r);
             r -= rs;
             taken += rs;
-    		//printf("-> rs %lld\n", rs);
+    		//printf("-> rs %I64d\n", rs);
             
             //single empty seat?
             if(taken == m-1) {
@@ -73,7 +73,7 @@ int main() {
                 b -= k;
                 z -= k;
                 taken += 2*k;
-        		//printf("-> k %lld\n", k);
+        		//printf("-> k %I64d\n", k);
                 
                 //only B or Z remaining
                 if(b > 0) {
@@ -81,24 +81,24 @@ int main() {
                     long long bs = min(b, (m-taken+1)/2);
                     b -= bs;
                     taken += bs;
-            		//printf("-> bs %lld\n", bs);
+            		//printf("-> bs %I64d\n", bs);
                 }
                 else {
                     //only Z
                     long long zs = max((long long) 0, min(z, m-taken));
                     z -= zs;
                     taken += zs;
-            		//printf("-> zs %lld\n", zs);
+            		//printf("-> zs %I64d\n", zs);
                 }
             }
             
             //sum up
             seated += taken;
             n--;
-    		//printf("=> taken %lld\n", taken);
+    		//printf("=> taken %I64d\n", taken);
 		}
       
-		printf("%lld\n", seated);
+		printf("%I64d\n", seated);
 	}
 	return 0;
 }

@@ -12,9 +12,9 @@ int main() {
     scanf("%d", &n);
     for(int i = 0; i < n; i++) {
         ll t;
-        scanf("%lld", &t);
+        scanf("%I64d", &t);
         s += t;
     }
-    printf("%lld\n", s);
+    printf("%I64d\n", s);
     return 0;
 }

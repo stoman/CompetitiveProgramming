@@ -11,9 +11,9 @@ int main() {
 	scanf("%d", &t);
 	for (int i = 0; i < t; ++i) {
         long long n1, n2, m;
-		scanf("%lld %lld %lld", &n1, &n2, &m);
+		scanf("%I64d %I64d %I64d", &n1, &n2, &m);
 		long long stones = m*(m+1)/2;
-		printf("%lld\n", n1 + n2 - 2*min(min(n1, n2), stones));
+		printf("%I64d\n", n1 + n2 - 2*min(min(n1, n2), stones));
 	}
 	return 0;
 }

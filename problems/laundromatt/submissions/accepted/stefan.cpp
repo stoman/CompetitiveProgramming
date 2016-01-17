@@ -24,11 +24,11 @@ int main() {
 	for (int i = 0; i < t; ++i) {
         int n;
         long long l, m, d;
-		scanf("%lld %d %lld %lld", &l, &n, &m, &d);
+		scanf("%I64d %d %I64d %I64d", &l, &n, &m, &d);
 		long long w[n], r = 0;
 		priority_queue<interval> q;
 		for (int j = 0; j < n; j++) {
-			scanf("%lld", &w[j]);
+			scanf("%I64d", &w[j]);
 			q.push(*new interval(j, w[j]));
 		}
 		priority_queue<interval> q2;
@@ -56,7 +56,7 @@ int main() {
 		}
 		
 
-		printf("Case #%d: %lld\n", i+1, r);
+		printf("Case #%d: %I64d\n", i+1, r);
 	}
 	return 0;
 }

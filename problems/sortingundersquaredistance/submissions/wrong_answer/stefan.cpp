@@ -11,11 +11,11 @@ using namespace std;
 
 int main() {
 	long long n;
-	scanf("%lld", &n);
+	scanf("%I64d", &n);
 	long long d[n];
 	unordered_map<long long, long long> inv;
 	for (long long i = 0; i < n; ++i) {
-		scanf("%lld", &d[i]);
+		scanf("%I64d", &d[i]);
 		inv.insert({d[i], i});
 	}
 	sort(d, d+n);
@@ -49,6 +49,6 @@ int main() {
 		}
 	}
 	
-	printf("%lld\n", r);
+	printf("%I64d\n", r);
 	return 0;
 }

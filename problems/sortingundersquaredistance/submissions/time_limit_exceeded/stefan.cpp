@@ -13,7 +13,7 @@ int main() {
 	scanf("%d", &n);
 	long long d[n];
 	for (int i = 0; i < n; ++i) {
-		scanf("%lld", &d[i]);
+		scanf("%I64d", &d[i]);
 	}
 	long long r = 0;
 	bool change = true;
@@ -30,6 +30,6 @@ int main() {
 		}
 	}
 	
-	printf("%lld", r);
+	printf("%I64d", r);
 	return 0;
 }
