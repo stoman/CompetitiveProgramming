@@ -36,7 +36,6 @@ int main() {
 		for (int j = 0; j < l; j++) {
 			interval o = q.top();
 			q.pop();
-			if(i < 4) printf("%d\n", o.id);
 			q.push(*new interval(o.id, o.end + w[o.id]));
 			if(mused < m) {
 				q2.push(*new interval(mused, o.end + d));
