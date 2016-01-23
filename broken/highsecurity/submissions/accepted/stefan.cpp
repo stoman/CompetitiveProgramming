@@ -14,7 +14,7 @@ int main() {
 	for (int i = 0; i < t; ++i) {
         int n;
 		scanf("%d", &n);
-		bool g[2][n+1];
+		bool g[2][n+2];
 		for (int j = 0; j < 2; j++) {
 			g[j][0] = true;
 			g[j][n+1] = true;
