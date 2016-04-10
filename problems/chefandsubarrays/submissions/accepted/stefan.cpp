@@ -1,6 +1,6 @@
 //Author: Stefan Toman
 
-#include <stdio.h>
+#include <iostream>
 #include <string.h>
 #include <algorithm>
 
@@ -8,13 +8,13 @@ using namespace std;
 
 int main() {
 	int t;
-	scanf("%d", &t);
+	cin >> t;
 	for (int i = 0; i < t; ++i) {
         int n;
 		scanf("%d", &n);
 		long long a[n];
 		for (int j = 0; j < n; j++) {
-			scanf("%I64d", &a[j]);
+			cin >> a[j];
 		}
 		int r = 0;
 		for (int x = 0; x < n; x++) {
@@ -28,7 +28,7 @@ int main() {
 				}
 			}
 		}
-		printf("%d\n", r);
+		cout << r << endl;
 	}
 	return 0;
 }
