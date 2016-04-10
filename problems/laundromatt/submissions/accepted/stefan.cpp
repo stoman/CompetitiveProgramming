@@ -1,6 +1,6 @@
 //Author: Stefan Toman
 
-#include <stdio.h>
+#include <iostream>
 #include <string.h>
 #include <algorithm>
 #include <queue>
@@ -20,15 +20,15 @@ bool operator<(const interval& a, const interval& b) {
 
 int main() {
 	int t;
-	scanf("%d", &t);
+	cin >> t;
 	for (int i = 0; i < t; ++i) {
         int n;
         long long l, m, d;
-		scanf("%I64d %d %I64d %I64d", &l, &n, &m, &d);
+		cin >> l >> n >> m >> d;
 		long long w[n], r = 0;
 		priority_queue<interval> q;
 		for (int j = 0; j < n; j++) {
-			scanf("%I64d", &w[j]);
+			cin >> w[j];
 			q.push(*new interval(j, w[j]));
 		}
 		priority_queue<interval> q2;
@@ -56,7 +56,7 @@ int main() {
 		}
 		
 
-		printf("Case #%d: %I64d\n", i+1, r);
+		cout << "Case #" << i+1 << ": " << r << endl;
 	}
 	return 0;
 }
