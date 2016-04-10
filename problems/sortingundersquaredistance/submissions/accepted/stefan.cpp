@@ -1,6 +1,6 @@
 //Author: Stefan Toman
 
-#include <stdio.h>
+#include <iostream>
 #include <string.h>
 #include <algorithm>
 #include <unordered_map>
@@ -10,11 +10,11 @@ using namespace std;
 
 int main() {
 	long long n;
-	scanf("%I64d", &n);
+	cin >> n;
 	long long d[n];
 	unordered_map<long long, queue<long long> > inv;
 	for (long long i = 0; i < n; ++i) {
-		scanf("%I64d", &d[i]);
+		cin >> d[i];
 		if(inv.find(d[i]) == inv.end()) {
 			queue<long long> q;
 			inv.insert({d[i], q});	
@@ -53,6 +53,6 @@ int main() {
 		}
 	}
 	
-	printf("%I64d\n", r);
+	cout << r << endl;
 	return 0;
 }

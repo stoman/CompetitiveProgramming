@@ -2,7 +2,7 @@
 
 //This submission ignores that there may be several identical IDs.
 
-#include <stdio.h>
+#include <iostream>
 #include <string.h>
 #include <algorithm>
 #include <unordered_map>
@@ -11,11 +11,11 @@ using namespace std;
 
 int main() {
 	long long n;
-	scanf("%I64d", &n);
+	cin >> n;
 	long long d[n];
 	unordered_map<long long, long long> inv;
 	for (long long i = 0; i < n; ++i) {
-		scanf("%I64d", &d[i]);
+		cin >> d[i];
 		inv.insert({d[i], i});
 	}
 	sort(d, d+n);
@@ -49,6 +49,6 @@ int main() {
 		}
 	}
 	
-	printf("%I64d\n", r);
+	cout << r << endl;
 	return 0;
 }

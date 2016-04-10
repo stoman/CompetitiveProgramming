@@ -2,7 +2,7 @@
 
 //Sorting the numbers needs to be done in O(n log n) instead of O(n^2).
 
-#include <stdio.h>
+#include <iostream>
 #include <string.h>
 #include <algorithm>
 
@@ -10,10 +10,10 @@ using namespace std;
 
 int main() {
 	int n;
-	scanf("%d", &n);
+	cin >> n;
 	long long d[n];
 	for (int i = 0; i < n; ++i) {
-		scanf("%I64d", &d[i]);
+		cin >> d[i];
 	}
 	long long r = 0;
 	bool change = true;
@@ -30,6 +30,6 @@ int main() {
 		}
 	}
 	
-	printf("%I64d", r);
+	cout << r << endl;
 	return 0;
 }
