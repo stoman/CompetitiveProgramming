@@ -1,20 +1,18 @@
 //Author: Stefan Toman
 
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
+#include <iostream>
 
-typedef long long ll;
+using namespace std;
 
 int main() {
     int n;
-    ll s=0;
-    scanf("%d", &n);
+    long long s = 0;
+    cin >> n;
     for(int i = 0; i < n; i++) {
-        ll t;
-        scanf("%I64d", &t);
+        long long t;
+        cin >> t;
         s += t;
     }
-    printf("%I64d\n", s);
+    cout << s << endl;
     return 0;
 }
