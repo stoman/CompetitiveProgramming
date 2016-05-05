@@ -1,19 +1,18 @@
 //Author: Stefan Toman
 
-#include <stdio.h>
-#include <string.h>
-#include <algorithm>
+#include <iostream>
 
 using namespace std;
 
 int main() {
 	int t;
-	scanf("%d", &t);
-	for (int i = 0; i < t; ++i) {
-        int n;
-		scanf("%d", &n);
+	cin >> t;
+	for(int i = 0; i < t; i++) {
+		int n;
+		cin >> n;
 
-		printf("%d\n", n);
+		cout << n << endl;
 	}
 	return 0;
 }
+
