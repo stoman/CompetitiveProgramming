@@ -5,7 +5,7 @@ all: $(PROBLEMS)
 .PHONY: all $(PROBLEMS)
 
 $(PROBLEMS):
-	problem="$@)"; problem=$${problem%.*}; \
+	problem="$@"; problem=$${problem%.*}; \
 	for f in $${problem}.*.h; do \
 		for n in 10 100; do \
 			echo "$@: checking case $$f with $$n nodes"; \
