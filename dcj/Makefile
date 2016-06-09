@@ -1,5 +1,5 @@
 PROBLEMS := $(wildcard *.cpp)
-DCJ := localtest/dcj.sh
+DCJ := ./localtest/dcj.sh
 
 all: $(PROBLEMS)
 .PHONY: all $(PROBLEMS)
