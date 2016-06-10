@@ -6,4 +6,4 @@ before_install:
 install: (cd problemtools && make)
 script:
     - (cd problems && make all)
-    - (cd dcj && make all)
+    - (cd distributed-problems && make all)
