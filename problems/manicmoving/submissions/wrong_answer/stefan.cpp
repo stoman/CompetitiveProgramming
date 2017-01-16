@@ -73,7 +73,7 @@ int main() {
 			if(get<0>(t) - get<1>(t) >= 1 && dist[get<2>(t)][d[get<1>(t)]] != -1) {
 				//cout << "e" << endl;
 				long long cost = memo[get<0>(t)][get<1>(t)][get<2>(t)] + dist[get<2>(t)][d[get<1>(t)]];
-				if(memo[get<0>(t)][get<1>(t) + 1].find(d[get<1>(t)]) == memo[get<0>(t)][get<1>(t) + 1].end() || memo[get<0>(t)][get<1>(t) + 1][d[get<1>(t)]] > cost) {
+				if(memo[get<0>(t)][get<1>(t) + 1].find(d[get<1>(t)]) == memo[get<0>(t)][get<1>(t) + 1].end() || memo[get<0>(t)][get<1>(t) + 1][s[get<0>(t)]] > cost) {
 					memo[get<0>(t)][get<1>(t) + 1][d[get<1>(t)]] = cost;
 					q.push(make_tuple(get<0>(t), get<1>(t) + 1, d[get<1>(t)]));
 				}
