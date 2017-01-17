@@ -3,4 +3,6 @@
 #Author: Stefan Toman
 
 if __name__ == '__main__':
-    print("Hello, World!")
+    n = int(input())
+    for i in range(n):
+        print(i**2)

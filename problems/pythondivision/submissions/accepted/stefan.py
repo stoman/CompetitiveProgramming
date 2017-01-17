@@ -3,4 +3,7 @@
 #Author: Stefan Toman
 
 if __name__ == '__main__':
-    print("Hello, World!")
+    a = int(input())
+    b = int(input())
+    print(a//b)
+    print(a/b)
