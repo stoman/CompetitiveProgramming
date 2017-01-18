@@ -1,0 +1,5 @@
+name: Set .discard(), .remove() & .pop()
+source: Hackerrank
+source_url: https://www.hackerrank.com/challenges/py-set-discard-remove-pop
+license: permission
+keywords: easy - warmup, sets
