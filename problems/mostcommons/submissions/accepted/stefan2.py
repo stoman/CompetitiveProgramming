@@ -12,7 +12,7 @@ if __name__ == '__main__':
         counts[c] += 1
 
     #sort
-    r = sorted(counts.items(), key=lambda x: (-x[1], x[0]))
+    r = sorted(counts.items(), key=lambda x: -x[1])
 
     #print output
     for x in r[:3]:
