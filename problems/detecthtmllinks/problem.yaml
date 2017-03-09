@@ -1,0 +1,5 @@
+name: Detect HTML links
+source: Hackerrank
+source_url: https://www.hackerrank.com/challenges/detect-html-links
+license: permission
+keywords: easy - regular expressions, regexp
