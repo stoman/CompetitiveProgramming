@@ -1,0 +1,7 @@
+name: Iterables and Iterators
+source: Hackerrank
+source_url: https://www.hackerrank.com/challenges/iterables-and-iterators.html
+license: permission
+keywords: easy - probability, binomial coefficient
+validator_flags: float_absolute_tolerance 1e-3
+
