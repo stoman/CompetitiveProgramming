@@ -1,0 +1,6 @@
+name: Multiple Linear Regression
+source: Hackerrank
+source_url: https://www.hackerrank.com/challenges/s10-multiple-linear-regression
+license: permission
+keywords: medium - statistics, linear regression
+validator_flags: float_relative_tolerance 1e-1
