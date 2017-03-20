@@ -1,0 +1,6 @@
+name: Polynomial Regression - Office Prices
+source: Hackerrank
+source_url: https://www.hackerrank.com/challenges/predicting-office-space-price
+license: permission
+keywords: medium - statistics, polynomial regression
+validator_flags: float_relative_tolerance 1e-1
