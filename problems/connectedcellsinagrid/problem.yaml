@@ -1,0 +1,5 @@
+name: Connected Cells in a Grid
+source: Hackerrank
+source_url: https://www.hackerrank.com/challenges/connected-cell-in-a-grid
+license: permission
+keywords: medium - dfs, depth-first search
