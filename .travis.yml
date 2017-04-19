@@ -5,11 +5,9 @@ before_install:
     - sudo apt-get update
     - sudo apt-get -y install make automake g++-5 gcc-5 libboost-dev libboost-regex-dev libgmp-dev libblas-dev liblapack-dev gfortran
     - sudo apt-get -y install python-plastex python-yaml python3
-    - sudo pip install -r requirements.txt
-    - python3 --version
-    - curl https://bootstrap.pypa.io/get-pip.py | sudo python3
-    - sudo python3 -m pip install -r requirements.txt
 install: (cd problemtools && make)
 script:
     - (cd problems && make all)
     - (cd distributed-problems && make all)
+virtualenv:
+    system_site_packages: true
