@@ -18,13 +18,13 @@ int main() {
   
   if(me < nodes - 1) {
     long long from = n / (nodes - 1) * me;
-    long long to = me == nodes -2 ? n - 1 : n / (nodes - 1) * (me + 1) - 1;
+    long long to = me == nodes - 2 ? n - 1 : n / (nodes - 1) * (me + 1) - 1;
   
     map<long long, long long> votes;
     for(long long i = from; i <= to; i++) votes[GetVote(i)]++;
     
     long long max = -1;
-    for(auto t: votes) if(2*t.second > to - from + 1) max = t.first;
+    for(auto& t: votes) if(2 * t.second > to - from + 1) max = t.first;
     
     PutLL(nodes - 1, max);
     Send(nodes - 1);
@@ -56,7 +56,7 @@ int main() {
     }
 
     long long win = -1;
-    for(int j = 0; j < max.size(); j++) if(2*votes[j] > GetN()) win = max[j];
+    for(int j = 0; j < max.size(); j++) if(2 * votes[j] > n) win = max[j];
 
     cout << (win == -1 ? "NO WINNER" : to_string(win)) << endl;
   }
