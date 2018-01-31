@@ -6,8 +6,8 @@ before_install:
     - sudo apt-get update
     - sudo apt-get -y install make automake g++-5 gcc-5 libboost-dev libboost-regex-dev libgmp-dev libblas-dev liblapack-dev gfortran
     - sudo apt-get -y install python-pip python3-pip python-plastex python-yaml python3-yaml
-    - sudo pip install -r requirements.txt
-    - sudo python3 -m pip install -r requirements.txt
+    - sudo pip install -r requirements.txt > /dev/null 2>&1
+    - sudo python3 -m pip install -r requirements.txt > /dev/null 2>&1
 install: (cd problemtools && make)
 script:
     - (cd problems && make all)
