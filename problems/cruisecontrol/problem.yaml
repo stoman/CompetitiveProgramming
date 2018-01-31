@@ -1,5 +1,6 @@
-name: Steed 2: Cruise Control
+name: Steed 2 - Cruise Control
 source: Google Code Jam 2017 - Round 1B
-source_url: Link
+source_url: https://code.google.com/codejam/contest/8294486/dashboard#s=p0&a=0
 license: permission
 keywords: easy - warmup
+validator_flags: float_absolute_tolerance 1e-6
