@@ -3,3 +3,4 @@ source: Google Code Jam 2017 - Round 1B
 source_url: Link
 license: permission
 keywords: hard - Dijkstra's Algorithm, Shortest Path
+validator_flags: float_absolute_tolerance 1e-6
