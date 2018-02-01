@@ -7,7 +7,7 @@
 int main(){
     char ampm[2];
     int h,m,s;
-    scanf("%d:%d:%d%s", &h, &m, &s, ampm);
+    scanf("%2d:%2d:%2d%s", &h, &m, &s, ampm);
     if(h == 12) {
         h -= 12;
     }
