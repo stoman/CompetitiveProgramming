@@ -5,4 +5,4 @@ all: $(PROBLEMS)
 .PHONY: all $(PROBLEMS)
 
 $(PROBLEMS): 
-	../problemtools/src/verifyproblem.py -p config submissions -l warning $@
+	../problemtools/bin/verifyproblem.sh -p config submissions -l warning $@
