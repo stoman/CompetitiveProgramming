@@ -3,16 +3,16 @@ import java.util.*
 fun isValid(category: String, value: String): Boolean {
   return try {
     when (category) {
-      "byr" -> (1920 until 2003).contains(value.toInt())
-      "iyr" -> (2010 until 2021).contains(value.toInt())
-      "eyr" -> (2020 until 2031).contains(value.toInt())
+      "byr" -> value.toInt() in 1920..2002
+      "iyr" -> value.toInt() in 2010..2020
+      "eyr" -> value.toInt() in 2020..2030
       "hgt" -> when {
-        value.endsWith("cm") -> (150 until 194).contains(value.dropLast(2).toInt())
-        value.endsWith("in") -> (59 until 77).contains(value.dropLast(2).toInt())
+        value.endsWith("cm") -> value.dropLast(2).toInt() in 150..193
+        value.endsWith("in") -> value.dropLast(2).toInt() in 59..76
         else -> false
       }
       "hcl" -> value.matches(Regex("#[0-9a-f]{6}"))
-      "ecl" -> setOf("amb", "blu", "brn", "gry", "grn", "hzl", "oth").contains(value)
+      "ecl" -> value in setOf("amb", "blu", "brn", "gry", "grn", "hzl", "oth")
       "pid" -> value.matches(Regex("\\d{9}"))
       else -> false
     }
