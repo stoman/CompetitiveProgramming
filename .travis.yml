@@ -5,7 +5,7 @@ before_install:
     - sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
     - sudo apt-get update
     - sudo apt-get -y install make automake libboost-dev libboost-regex-dev libgmp-dev libblas-dev liblapack-dev gfortran
-    - sudo apt-get -y install python3-pip python3-plastex python3-yaml
+    - sudo apt-get -y install python3-pip python3-plastex python3-yaml python2.7 python-pip
     - sudo pip install -q -r requirements.txt
     - travis_wait 30 sudo python3 -m pip install -q -r requirements.txt
 install: (cd problemtools && make)
