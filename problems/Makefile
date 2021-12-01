@@ -5,4 +5,4 @@ all: $(PROBLEMS)
 .PHONY: all $(PROBLEMS)
 
 $(PROBLEMS): 
-	../problemtools/bin/verifyproblem.sh -p config submissions -l warning $@
+	~/.local/bin/verifyproblem -p config submissions -l warning $@

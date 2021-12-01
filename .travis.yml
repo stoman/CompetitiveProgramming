@@ -1,14 +1,9 @@
 dist: focal
 sudo: required
-language: cpp
-before_install:
-    - sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
-    - sudo apt-get update
-    - sudo apt-get -y install make automake libboost-dev libboost-regex-dev libgmp-dev libblas-dev liblapack-dev gfortran
-    - sudo apt-get -y install python3-pip python3-plastex python3-yaml python2 python-pip-whl python-yaml
-    - sudo pip install -q -r requirements.txt
-    - travis_wait 30 sudo python3 -m pip install -q -r requirements.txt
-install: (cd problemtools && make)
+language: python
+install:
+    - pip install git+https://github.com/kattis/problemtools
+    - pip install -q -r requirements.txt
 script:
     - (cd problems && make all)
     - (cd distributed-problems && make all)
