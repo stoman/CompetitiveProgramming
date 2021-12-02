@@ -3,8 +3,7 @@ name: Verify problems
 on: [push]
 
 jobs:
-  build:
-
+  problems:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -20,5 +19,9 @@ jobs:
           pip install -r requirements.txt
       - name: Test problems
         run: (cd problems && make all)
+  distributed-problems:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
       - name: Test distributed problems
         run: (cd distributed-problems && make all)
