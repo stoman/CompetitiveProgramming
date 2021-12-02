@@ -1,9 +1,0 @@
-dist: focal
-sudo: required
-language: python
-install:
-    - pip install git+https://github.com/kattis/problemtools
-    - pip install -q -r requirements.txt
-script:
-    - (cd problems && make all)
-    - (cd distributed-problems && make all)

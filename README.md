@@ -6,7 +6,7 @@ All problems use the [Kattis problem format](http://www.problemarchive.org/wiki/
 
 Do not use the submissions if you want to solve the problems yourself, but feel free to have a look if you really want to see other submissions. Depending on how you use this repository it may not be optimal for learning. The main purpose of this repository is to collect the problems for myself, I published it since I see no important reasons against it.
 
-# Build [![Build Status](https://travis-ci.org/stoman/CompetitiveProgramming.svg)](https://travis-ci.org/stoman/CompetitiveProgramming)
+# Build
 
 `checktestdata` is executed on each problem after pushing to this directory. Results of the builds may be found at [Travis](https://travis-ci.org/stoman/competitive-programming).
 

@@ -1,0 +1,23 @@
+name: Verify problems
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install git+https://github.com/kattis/problemtools
+          pip install -r requirements.txt
+      - name: Test problems
+        run: (cd problems && make all)
+      - name: Test distributed problems
+        run: (cd distributed-problems && make all)
