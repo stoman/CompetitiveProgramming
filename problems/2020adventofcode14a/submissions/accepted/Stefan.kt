@@ -12,7 +12,7 @@ fun combine(i: BigInteger, mask: String): BigInteger {
   return value.joinToString("").toBigInteger(2)
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val s = Scanner(System.`in`).useDelimiter("""]\s=\s|\s=\s|\s|\[""")
   var mask = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
   val mem = mutableMapOf<Int, BigInteger>()

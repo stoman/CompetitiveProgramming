@@ -1,9 +1,9 @@
 import java.util.Scanner
 
-fun main(args: Array<String>) {
+fun main() {
   val s = Scanner(System.`in`)
 
-  var input = mutableSetOf<Int>()
+  val input = mutableSetOf<Int>()
   while (s.hasNext()) {
     input.add(s.nextInt())
   }

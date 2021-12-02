@@ -1,6 +1,6 @@
 import java.util.*
 
-fun main(args: Array<String>) {
+fun main() {
   val s = Scanner(System.`in`)
   val decks = mutableMapOf<Int, Queue<Int>>()
   var id = 0
@@ -19,7 +19,7 @@ fun main(args: Array<String>) {
 
   while (decks.values.count { it.isNotEmpty() } > 1) {
     val nextCards = decks.mapValues { it.value.remove() }
-    val winner = nextCards.maxBy { it.value }!!.key
+    val winner = nextCards.maxByOrNull { it.value }!!.key
     decks[winner]!!.addAll(nextCards.values.sortedDescending())
   }
 

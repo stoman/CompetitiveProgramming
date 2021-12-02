@@ -1,6 +1,6 @@
 import java.util.*
 
-fun main(args: Array<String>) {
+fun main() {
   val s = Scanner(System.`in`).useDelimiter("\\s|,")
   val arrival = s.nextInt()
   val busses = mutableListOf<Int>()
@@ -11,6 +11,6 @@ fun main(args: Array<String>) {
     }
   }
   val waitTime = {bus: Int -> bus - (arrival % bus)}
-  val myBus = busses.minBy(waitTime) ?: return
+  val myBus = busses.minByOrNull(waitTime) ?: return
   println(myBus * waitTime(myBus))
 }

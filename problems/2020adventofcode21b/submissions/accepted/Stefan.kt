@@ -1,6 +1,6 @@
 import java.util.*
 
-fun main(args: Array<String>) {
+fun main() {
   val s = Scanner(System.`in`).useDelimiter("\\n")
   var possibleCandidates = mutableMapOf<String, Set<String>>()
   val namesCount = mutableMapOf<String, Int>()

@@ -11,7 +11,7 @@ fun step1(buffer: List<BigInteger>): BigInteger {
   throw RuntimeException("step 1 failed")
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val s = Scanner(System.`in`)
 
   val buffer = mutableListOf<BigInteger>()
@@ -34,5 +34,5 @@ fun main(args: Array<String>) {
     }
   }
   val range = (start..end).map{buffer[it]}
-  println(range.min()!! + range.max()!!)
+  println(range.minOrNull()!! + range.maxOrNull()!!)
 }

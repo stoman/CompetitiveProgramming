@@ -14,7 +14,7 @@ private operator fun MutableMap<String, Int>.plusAssign(map: MutableMap<String, 
   }
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val s = Scanner(System.`in`)
 
   val contents = mutableMapOf<String, MutableMap<String, Int>>()

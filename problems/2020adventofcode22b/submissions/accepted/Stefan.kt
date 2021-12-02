@@ -1,6 +1,6 @@
 import java.util.*
 
-fun main(args: Array<String>) {
+fun main() {
   val s = Scanner(System.`in`)
   var deckA: ArrayDeque<Int> = ArrayDeque()
   var deckB: ArrayDeque<Int> = ArrayDeque()

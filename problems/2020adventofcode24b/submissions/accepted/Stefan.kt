@@ -4,7 +4,7 @@ fun neighbors(tile: Pair<Int, Int>): List<Pair<Int, Int>> =
   listOf(Pair(tile.first, tile.second - 1), Pair(tile.first + 1, tile.second - 1), Pair(tile.first + 1, tile.second),
     Pair(tile.first - 1, tile.second), Pair(tile.first - 1, tile.second + 1), Pair(tile.first, tile.second + 1))
 
-fun main(args: Array<String>) {
+fun main() {
   val s = Scanner(System.`in`)
   val tiles = mutableMapOf<Pair<Int, Int>, Boolean>()
   while (s.hasNext()) {

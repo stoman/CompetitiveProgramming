@@ -21,7 +21,7 @@ fun seatId(partitioning: String): Int {
   return r
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val s = Scanner(System.`in`)
 
   val seats = mutableSetOf<Int>()

@@ -1,6 +1,6 @@
 import java.util.Scanner
 
-fun main(args: Array<String>) {
+fun main() {
     val s = Scanner(System.`in`).useDelimiter("-|\\s|:\\s")
 
     var r = 0

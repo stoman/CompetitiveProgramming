@@ -9,6 +9,8 @@ private data class Border(val chars: List<Char>) {
     other as Border
     return chars == other.chars || chars.reversed() == other.chars
   }
+
+  override fun hashCode(): Int = super.hashCode()
 }
 
 private data class Tile(val id: BigInteger, val chars: List<List<Char>>) {
@@ -18,7 +20,7 @@ private data class Tile(val id: BigInteger, val chars: List<List<Char>>) {
   }
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val s = Scanner(System.`in`).useDelimiter("\\n\\n")
 
   val tiles = mutableMapOf<BigInteger, Tile>()

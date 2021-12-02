@@ -2,7 +2,7 @@ import java.util.*
 
 const val cycles = 6
 
-fun main(args: Array<String>) {
+fun main() {
   val s = Scanner(System.`in`)
 
   val input = mutableListOf<List<Boolean>>()

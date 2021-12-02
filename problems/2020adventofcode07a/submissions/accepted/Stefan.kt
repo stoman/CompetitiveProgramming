@@ -8,7 +8,7 @@ private operator fun Int.times(map: MutableMap<String, Int>): MutableMap<String,
   return r
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val s = Scanner(System.`in`)
 
   val contents = mutableMapOf<String, MutableMap<String, Int>>()

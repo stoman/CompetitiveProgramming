@@ -32,7 +32,7 @@ fun execute(commands: List<Command>): Int? {
   return acc
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val s = Scanner(System.`in`)
 
   val commands = mutableListOf<Command>()

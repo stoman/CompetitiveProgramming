@@ -3,7 +3,7 @@ import java.util.*
 
 const val mod = 20201227
 
-fun main(args: Array<String>) {
+fun main() {
   val s = Scanner(System.`in`)
   val cardPublicKey = s.nextInt()
   val doorPublicKey = s.nextInt()

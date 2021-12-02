@@ -1,7 +1,7 @@
 import java.math.BigInteger
 import java.util.*
 
-fun main(args: Array<String>) {
+fun main() {
   val s = Scanner(System.`in`).useDelimiter("""\s\syour ticket:\s|\s\snearby tickets:\s""")
 
   // Read ranges.
@@ -13,7 +13,7 @@ fun main(args: Array<String>) {
   }
 
   // Read tickets
-  var myTicket: List<Int> = s.next().split(",").map { it.toInt() }
+  val myTicket: List<Int> = s.next().split(",").map { it.toInt() }
   val sTickets = Scanner(s.next())
   val tickets = mutableListOf<List<Int>>()
   while (sTickets.hasNext()) {

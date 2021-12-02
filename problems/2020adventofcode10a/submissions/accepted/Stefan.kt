@@ -1,12 +1,12 @@
 import java.util.*
 
-fun main(args: Array<String>) {
+fun main() {
   val s = Scanner(System.`in`)
   val adapters = mutableListOf(0)
   while (s.hasNext()) {
     adapters.add(s.nextInt())
   }
-  adapters.add(adapters.max()!! + 3)
+  adapters.add(adapters.maxOrNull()!! + 3)
   adapters.sort()
 
   val diffs = arrayOf(0, 0, 0, 0)

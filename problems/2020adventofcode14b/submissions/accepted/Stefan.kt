@@ -22,7 +22,7 @@ fun combine(i: Int, mask: String): Set<BigInteger> {
   return combine(i.toString(2).padStart(mask.length, '0').toList(), mask)
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val s = Scanner(System.`in`).useDelimiter("""]\s=\s|\s=\s|\s|\[""")
   var mask = "".padStart(36, '0')
   val mem = mutableMapOf<BigInteger, BigInteger>()

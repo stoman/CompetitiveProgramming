@@ -22,7 +22,7 @@ fun evaluate(it: Iterator<Char>): BigInteger {
   return buffer
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val s = Scanner(System.`in`).useDelimiter("\n")
 
   var r = BigInteger.ZERO

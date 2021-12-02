@@ -64,7 +64,7 @@ private data class MyTile(val id: BigInteger, val chars: List<List<Char>>) {
   }
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val s = Scanner(System.`in`).useDelimiter("\\n\\n")
 
   val tiles = mutableSetOf<MyTile>()
@@ -96,7 +96,7 @@ fun main(args: Array<String>) {
   }
 
   val keysSecond = map.keys.map { it.second }
-  for (j in (keysSecond.min()!!)..(keysSecond.max()!!)) {
+  for (j in (keysSecond.minOrNull()!!)..(keysSecond.maxOrNull()!!)) {
     for (i in 0 downTo -tiles.size) {
       val next: MyTile = allTransformations.firstOrNull { it.fitsBottom(map[Pair(i, j)]!!) } ?: break
       map[Pair(i - 1, j)] = next
@@ -113,10 +113,10 @@ fun main(args: Array<String>) {
   val keysFirst = map.keys.map { it.first }
 
   if (DEBUG) {
-    for (i in (keysFirst.min()!!)..(keysFirst.max())!!) {
+    for (i in (keysFirst.minOrNull()!!)..(keysFirst.maxOrNull())!!) {
       for (j in map[Pair(i, 0)]!!.chars.indices) {
         println(
-          ((keysSecond.min()!!)..(keysSecond.max()!!)).joinToString(" ") {
+          ((keysSecond.minOrNull()!!)..(keysSecond.maxOrNull()!!)).joinToString(" ") {
             map[Pair(i, it)]!!.chars[j].joinToString("")
           })
       }
@@ -125,9 +125,9 @@ fun main(args: Array<String>) {
   }
 
   val fullMap = mutableListOf<MutableList<Char>>()
-  for (i in (keysFirst.min()!!)..(keysFirst.max())!!) {
+  for (i in (keysFirst.minOrNull()!!)..(keysFirst.maxOrNull())!!) {
     for (j in 1 until map[Pair(i, 0)]!!.chars.size -1) {
-      fullMap += ((keysSecond.min()!!)..(keysSecond.max()!!)).flatMap {
+      fullMap += ((keysSecond.minOrNull()!!)..(keysSecond.maxOrNull()!!)).flatMap {
         map[Pair(i, it)]!!.chars[j].drop(1).dropLast(1)
       }.toMutableList()
     }

@@ -1,7 +1,7 @@
 import java.util.*
 import kotlin.math.abs
 
-fun main(args: Array<String>) {
+fun main() {
   val s = Scanner(System.`in`)
   var x = 0
   var y = 0

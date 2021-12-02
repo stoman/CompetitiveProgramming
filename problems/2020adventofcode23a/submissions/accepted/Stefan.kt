@@ -6,7 +6,7 @@ fun moveToEnd(cups: List<Int>, end: Int): List<Int> {
   return cups.takeLast(move) + cups.dropLast(move)
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val s = Scanner(System.`in`)
   var cups = s.next().map { it.toString().toInt() }
   repeat(100) {

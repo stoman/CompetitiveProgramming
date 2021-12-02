@@ -1,6 +1,6 @@
 import java.util.*
 
-fun main(args: Array<String>) {
+fun main() {
   val s = Scanner(System.`in`)
   val arr = MutableList(10) { -1 }
   val cups = s.next().map { it.toString().toInt() }

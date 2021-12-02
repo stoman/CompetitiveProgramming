@@ -27,7 +27,7 @@ fun evaluate(it: Stack<Char>, start: BigInteger = BigInteger.ZERO, readClosingBr
   return buffer
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val s = Scanner(System.`in`).useDelimiter("\n")
 
   var r = BigInteger.ZERO

@@ -1,7 +1,7 @@
 import java.util.*
 import kotlin.math.abs
 
-fun main(args: Array<String>) {
+fun main() {
   val directions = listOf(Pair(1, 0), Pair(0, -1), Pair(-1, 0), Pair(0, 1))
   val s = Scanner(System.`in`)
   var dir = 0

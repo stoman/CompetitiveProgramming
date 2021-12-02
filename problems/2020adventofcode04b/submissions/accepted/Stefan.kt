@@ -21,7 +21,7 @@ fun isValid(category: String, value: String): Boolean {
   }
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val s = Scanner(System.`in`).useDelimiter("\n\n")
   val requiredFields = setOf("byr", "iyr", "eyr", "hgt", "hcl", "ecl", "pid")
 

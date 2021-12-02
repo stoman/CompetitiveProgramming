@@ -6,7 +6,7 @@ data class WaitingArea(val seats: List<List<Seat>>) {
   private val neighbors =
     listOf(Pair(-1, -1), Pair(-1, 0), Pair(-1, 1), Pair(0, -1), Pair(0, 1), Pair(1, -1), Pair(1, 0), Pair(1, 1))
 
-  fun people(): Int = seats.sumBy { it.count { cell -> cell == Seat.OCCUPIED } }
+  fun people(): Int = seats.sumOf { it.count { cell -> cell == Seat.OCCUPIED } }
   fun next(): WaitingArea {
     val r = List(seats.size) { MutableList(seats[0].size) {Seat.FLOOR} }
     for (i in seats.indices) {
@@ -34,7 +34,7 @@ data class WaitingArea(val seats: List<List<Seat>>) {
   }
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val s = Scanner(System.`in`)
   val input = mutableListOf<List<Seat>>()
   while (s.hasNext()) {

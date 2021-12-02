@@ -1,6 +1,6 @@
 import java.util.*
 
-fun main(args: Array<String>) {
+fun main() {
   val s = Scanner(System.`in`)
   val tiles = mutableMapOf<Pair<Int, Int>, Boolean>()
   while(s.hasNext()) {

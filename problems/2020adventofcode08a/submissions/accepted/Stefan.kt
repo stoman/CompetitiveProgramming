@@ -2,7 +2,7 @@ import java.util.*
 
 data class Command(val cmd: String, val value: Int)
 
-fun main(args: Array<String>) {
+fun main() {
   val s = Scanner(System.`in`)
 
   val commands = mutableListOf<Command>()

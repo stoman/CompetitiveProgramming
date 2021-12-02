@@ -1,6 +1,6 @@
 import java.util.*
 
-fun main(args: Array<String>) {
+fun main() {
   val s = Scanner(System.`in`).useDelimiter("\\n\\n")
 
   val sRules = Scanner(s.next()).useDelimiter("\\n")

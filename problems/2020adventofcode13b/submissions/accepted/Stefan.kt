@@ -16,7 +16,7 @@ fun modInv(a: BigInteger, m: BigInteger): BigInteger {
   return (y + m) % m
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val s = Scanner(System.`in`).useDelimiter("\\s|,")
   s.nextInt()
   val a = mutableListOf<BigInteger>()

@@ -1,6 +1,6 @@
 import java.util.Scanner
 
-fun main(args: Array<String>) {
+fun main() {
   val s = Scanner(System.`in`).useDelimiter(",|\\s")
   var turn = 0
   var last = -1
