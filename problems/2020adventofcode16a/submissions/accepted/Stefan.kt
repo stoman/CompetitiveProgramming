@@ -12,10 +12,12 @@ fun main() {
   }
 
   // Read tickets
-  val sTickets = Scanner(s.next())
   val tickets = mutableListOf<List<Int>>()
-  while (sTickets.hasNext()) {
-    tickets.add(sTickets.next().split(",").map { it.toInt() })
+  repeat(2) {
+    val sTickets = Scanner(s.next())
+    while (sTickets.hasNext()) {
+      tickets.add(sTickets.next().split(",").map { it.toInt() })
+    }
   }
 
   println(tickets.flatten().filter { i -> ranges.values.flatten().none { i in it } }.sum())
