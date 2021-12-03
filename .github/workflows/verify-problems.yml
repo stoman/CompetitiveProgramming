@@ -19,6 +19,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install git+https://github.com/kattis/problemtools
           pip install -r requirements.txt
+          python3 -m pip install -r requirements.txt
       - name: Verify problems
         run: (cd problems && make all)
   distributed-problems:
