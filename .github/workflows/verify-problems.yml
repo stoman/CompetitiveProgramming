@@ -15,7 +15,7 @@ jobs:
           python-version: '3.x'
       - name: Install dependencies
         run: |
-          sudo apt install automake g++ make libboost-regex-dev libgmp-dev libgmp10 libgmpxx4ldbl python3 python3-pytest python3-setuptools python3-yaml python3-plastex
+          sudo apt install automake g++ make libboost-regex-dev libgmp-dev libgmp10 libgmpxx4ldbl python3 python3-pytest python3-setuptools python3-yaml python3-plastex python3-unidecode
           python -m pip install --upgrade pip
           pip install git+https://github.com/kattis/problemtools
           pip install -r requirements.txt
