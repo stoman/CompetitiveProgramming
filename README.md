@@ -1,9 +1,6 @@
 # About
 
-This repository contains some submissions for competitive programming problems I solved, but by far not all of them
-(e.g. missing all ICPC contests I participated in, [Google Hash Code](https://hashcode.withgoogle.com/) which is
-uploaded in dedicated repositories, contests I worked on as an organizer of Google Hash Code, etc.). I only post
-solutions to training problems or problems from past contests. Problems include in particular:
+This repository contains some submissions for competitive programming problems I solved. Contests include:
 
  * [Advent of Code](https://adventofcode.com), including
    * [Advent of Code 2020](https://adventofcode.com/2020) in Kotlin
@@ -42,11 +39,13 @@ solutions to training problems or problems from past contests. Problems include 
  * [Northwestern Europe Regional Contest (NWERC)](https://www.nwerc.eu), including
    * [NWERC 2015](http://2015.nwerc.eu)
 
-All problems use the [Kattis problem format](http://www.problemarchive.org/wiki/index.php/Problem_Format) to allow
-the use of the [Kattis problemtools](https://github.com/Kattis/problemtools). Most problems just contain sample data
-and my submissions, other data as the problem text or secret test data are only available for selected problems. All
-problems contain source links and keywords. Some solutions contain explanations describing the idea to solve the
-problem, others just use the algorithm.
+Contest not uploaded to this repository include:
+
+* All [ICPC](https://icpc.global) contests I participated in with my team without having access to an internet
+  connection.
+* [Google Hash Code](https://hashcode.withgoogle.com/) which is uploaded in dedicated repositories.
+* Contests I worked on as an organizer of [Google Hash Code](https://hashcode.withgoogle.com/).
+* Contests that are still running.
 
 Do not use the submissions if you want to solve the problems yourself, but feel free to have a look if you really
 want to see other submissions. Depending on how you use this repository it may not be optimal for learning. The main
@@ -55,6 +54,12 @@ against it.
 
 # Usage
 
+All problems use the [Kattis problem format](http://www.problemarchive.org/wiki/index.php/Problem_Format) to allow
+the use of the [Kattis problemtools](https://github.com/Kattis/problemtools). Most problems just contain sample data
+and my submissions, other data as the problem text or secret test data are only available for selected problems. All
+problems contain source links and keywords. Some solutions contain explanations describing the idea to solve the
+problem, others just use the code.
+
 To find problems for a specific topic or contest search for keywords like this:
 
 ```
@@ -62,7 +67,7 @@ grep 'NWERC' problems/*/problem.yaml
 grep 'dynamic programming' problems/*/problem.yaml
 ```
 
-I also tagger the problems with a difficulty rating. This is just a subjective feeling. Search for the difficulty rating
+I also tagged the problems with a difficulty rating. This is just a subjective feeling. Search for the difficulty rating
 like this: 
 
 ```
