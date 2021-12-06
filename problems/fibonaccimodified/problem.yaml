@@ -2,4 +2,4 @@ name: Fibonacci Modified
 source: Hackerrank
 source_url: https://www.hackerrank.com/challenges/fibonacci-modified
 license: permission
-keywords: easy - dynamic programming, BigInteger
+keywords: easy - dynamic programming, big integers
