@@ -1,0 +1,66 @@
+name: Update Advent of Code Badges
+on:
+  schedule:
+    - cron: '9 * * 12 *'
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v2
+      - name: Update 2015 badge
+        uses: joblo2213/aoc-badges-action@v3
+        with:
+          year: 2015
+          userid: 1064020
+          session: ${{ secrets.AOC_SESSION }}
+          starsRegex: '(?<=https:\/\/img\.shields\.io\/badge\/stars%20⭐-)[0-9]+(?=-yellow)(?=.*2015)'
+      - name: Update 2016 badge
+        uses: joblo2213/aoc-badges-action@v3
+        with:
+          year: 2016
+          userid: 1064020
+          session: ${{ secrets.AOC_SESSION }}
+          starsRegex: '(?<=https:\/\/img\.shields\.io\/badge\/stars%20⭐-)[0-9]+(?=-yellow)(?=.*2016)'
+      - name: Update 2017 badge
+        uses: joblo2213/aoc-badges-action@v3
+        with:
+          year: 2017
+          userid: 1064020
+          session: ${{ secrets.AOC_SESSION }}
+          starsRegex: '(?<=https:\/\/img\.shields\.io\/badge\/stars%20⭐-)[0-9]+(?=-yellow)(?=.*2017)'
+      - name: Update 2018 badge
+        uses: joblo2213/aoc-badges-action@v3
+        with:
+          year: 2018
+          userid: 1064020
+          session: ${{ secrets.AOC_SESSION }}
+          starsRegex: '(?<=https:\/\/img\.shields\.io\/badge\/stars%20⭐-)[0-9]+(?=-yellow)(?=.*2018)'
+      - name: Update 2019 badge
+        uses: joblo2213/aoc-badges-action@v3
+        with:
+          year: 2019
+          userid: 1064020
+          session: ${{ secrets.AOC_SESSION }}
+          starsRegex: '(?<=https:\/\/img\.shields\.io\/badge\/stars%20⭐-)[0-9]+(?=-yellow)(?=.*2019)'
+      - name: Update 2020 badge
+        uses: joblo2213/aoc-badges-action@v3
+        with:
+          year: 2020
+          userid: 1064020
+          session: ${{ secrets.AOC_SESSION }}
+          starsRegex: '(?<=https:\/\/img\.shields\.io\/badge\/stars%20⭐-)[0-9]+(?=-yellow)(?=.*2020)'
+      - name: Update 2021 badge
+        uses: joblo2213/aoc-badges-action@v3
+        with:
+          year: 2021
+          userid: 1064020
+          session: ${{ secrets.AOC_SESSION }}
+          starsRegex: '(?<=https:\/\/img\.shields\.io\/badge\/stars%20⭐-)[0-9]+(?=-yellow)(?=.*2021)'
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Update badges
+          file_pattern: README.md
