@@ -3,8 +3,8 @@
 This repository contains some submissions for competitive programming problems I solved. Contests include:
 
  * [Advent of Code](https://adventofcode.com), including
-   * [Advent of Code 2020](https://adventofcode.com/2020) in Kotlin ![](https://img.shields.io/badge/stars%20⭐-0-yellow?2020)
-   * [Advent of Code 2021](https://adventofcode.com/2021) in Kotlin ![](https://img.shields.io/badge/stars%20⭐-0-yellow?2021)
+   * [Advent of Code 2020](https://adventofcode.com/2020) in Kotlin ![](https://img.shields.io/badge/stars%20⭐-50-yellow?2020)
+   * [Advent of Code 2021](https://adventofcode.com/2021) in Kotlin ![](https://img.shields.io/badge/stars%20⭐-14-yellow?2021)
  * [CodeChef](https://www.codechef.com), including
    * [December Challenge 2015](https://www.codechef.com/DEC15)
    * [December Cook-Off 2015](https://www.codechef.com/COOK65)
