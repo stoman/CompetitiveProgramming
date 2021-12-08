@@ -1,4 +1,4 @@
-name: Update Advent of Code Badges
+name: Update Advent of Code badges
 on:
   schedule:
     - cron: '9 * * 12 *'
