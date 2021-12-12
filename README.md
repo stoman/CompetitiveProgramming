@@ -36,6 +36,7 @@ This repository contains some submissions for competitive programming problems I
    * [Week of Code 20](https://www.hackerrank.com/contests/w20)
    * [World CodeSprint 5](https://www.hackerrank.com/contests/world-codesprint-5)
    * [World CodeSprint May 2016](https://www.hackerrank.com/contests/may-world-codesprint)
+ * [LeetCode](https://leetcode.com)
  * [Northwestern Europe Regional Contest (NWERC)](https://www.nwerc.eu), including
    * [NWERC 2015](http://2015.nwerc.eu)
 

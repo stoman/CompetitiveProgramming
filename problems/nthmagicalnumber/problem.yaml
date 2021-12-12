@@ -2,4 +2,4 @@ name: Nth Magical Number
 source: LeetCode
 source_url: https://leetcode.com/problems/nth-magical-number
 license: permission
-keywords: medium - maths, gcd, greatest common divisor
+keywords: hard - maths, gcd, greatest common divisor
