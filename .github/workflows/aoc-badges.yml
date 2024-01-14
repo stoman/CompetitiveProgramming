@@ -59,6 +59,20 @@ jobs:
           userid: 1064020
           session: ${{ secrets.AOC_SESSION }}
           starsRegex: '(?<=https:\/\/img\.shields\.io\/badge\/stars%20⭐-)[0-9]+(?=-yellow)(?=.*2021)'
+      - name: Update 2022 badge
+        uses: joblo2213/aoc-badges-action@v3
+        with:
+          year: 2022
+          userid: 1064020
+          session: ${{ secrets.AOC_SESSION }}
+          starsRegex: '(?<=https:\/\/img\.shields\.io\/badge\/stars%20⭐-)[0-9]+(?=-yellow)(?=.*2022)'
+      - name: Update 2023 badge
+        uses: joblo2213/aoc-badges-action@v3
+        with:
+          year: 2023
+          userid: 1064020
+          session: ${{ secrets.AOC_SESSION }}
+          starsRegex: '(?<=https:\/\/img\.shields\.io\/badge\/stars%20⭐-)[0-9]+(?=-yellow)(?=.*2023)'
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
