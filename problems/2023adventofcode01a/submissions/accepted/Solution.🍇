@@ -1,0 +1,58 @@
+📗 Type containing all methods for solving the first day of Advent of Code 2024. 📗
+🐇 🕵️ 🍇
+  📗 Compute the calibration value for one input line. 📗
+  🐇❓ 💡 line🔡 ➡️ 🔢 🚧🚧 🍇
+    ↩️ 🔺 ⏮️🐇🕵️ line ❓ ✖️ 10 ➕ 🔺 ⏭️🐇🕵️ line ❓
+  🍉
+
+  📗
+    Returns the first number appearing in a string.
+
+    Throws an error if no number was found in the string.
+  📗
+  🐇❓ ⏮️ str🔡 ➡️ 🔢 🚧🚧 🍇
+    🔂 i 🆕⏩ 0 📐str❗️➖1 ❗️ 🍇 💭 Go through substrings from left to right.
+      🔪 str i 📐str❗️➖i ❗️ ➡️ substr
+      🔞🐇🕵️ substr ❓ ➡️ number
+      ↪️ ❎ number 🙌 🤷‍♀️ ❗️ 🍇 💭 If a number was found, return it.
+        ↩️ 🍺 number
+      🍉
+    🍉
+    🚨 🆕🚧 🔤No number found in input.🔤❗️
+  🍉
+
+  📗
+    Returns the last number appearing in a string.
+    
+    Throws an error if no number was found in the string.
+  📗
+  🐇❓ ⏭️ str🔡 ➡️ 🔢 🚧🚧 🍇
+    🔂 i 🆕⏩ 📐str❗️➖2 -1 ❗️ 🍇 💭 Go through substrings from right to left.
+      🔪 str i 📐str❗️➖i ❗️ ➡️ substr
+      🔞🐇🕵️ substr ❓ ➡️ number
+      ↪️ ❎ number 🙌 🤷‍♀️ ❗️ 🍇 💭 If a number was found, return it.
+        ↩️ 🍺 number
+      🍉
+    🍉
+    🚨 🆕🚧 🔤No number found in input.🔤❗️
+  🍉
+
+  📗
+    Return the integer starting at the beginning of the input string. If the string
+    doesn't start with an integer, return an empty optional.
+  📗
+  🐇❓ 🔞 str🔡 ➡️ 🍬🔢 🍇
+    ↩️ 🔢 🐽 🎶 str ❗️ 0 ❗️ 10 ❗️
+  🍉
+🍉
+
+📗 Main method. Read all input lines and call the 🕵️ type for each line. 📗
+🏁 🍇
+  🆕 🔡▶️👂🏼❗️ ➡️ 🖍🆕line 💭 Read the first line of the input.
+  0 ➡️ 🖍🆕sum
+  🔁 📐line❗️ ▶️ 0 🍇 💭 While the line read is not empty.
+    sum ⬅️➕ 🍺 💡🐇🕵️ line ❓ 💭 Call the 🕵️ type and sum up the results.
+    🆕 🔡▶️👂🏼❗️ ➡️ 🖍line 💭 Read the next line of the input.
+  🍉
+  😀 🔡sum❗️ ❗️
+🍉
