@@ -6,7 +6,7 @@ This repository contains some submissions for competitive programming problems I
    * [Advent of Code 2020](https://adventofcode.com/2020) in Kotlin ![](https://img.shields.io/badge/stars%20⭐-50-yellow?2020)
    * [Advent of Code 2021](https://adventofcode.com/2021) in Kotlin ![](https://img.shields.io/badge/stars%20⭐-43-yellow?2021)
    * [Advent of Code 2023](https://adventofcode.com/2023) in [Emojicode](https://emojicode.org/) ![](https://img.shields.io/badge/stars%20⭐-2-yellow?2023)
-   * [Advent of Code 2024](https://adventofcode.com/2024) in Rust ![](https://img.shields.io/badge/stars%20⭐-0-yellow?2024)
+   * [Advent of Code 2024](https://adventofcode.com/2024) in Rust ![](https://img.shields.io/badge/stars%20⭐-2-yellow?2024)
  * [CodeChef](https://www.codechef.com), including
    * [December Challenge 2015](https://www.codechef.com/DEC15)
    * [December Cook-Off 2015](https://www.codechef.com/COOK65)
