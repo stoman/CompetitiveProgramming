@@ -13,6 +13,8 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.x'
+      - name: Set up Kotlin
+        uses: fwilhe2/setup-kotlin@main
       - name: Install dependencies
         run: |
           sudo apt install automake g++ make libboost-regex-dev libgmp-dev libgmp10 libgmpxx4ldbl python3 python3-pytest python3-setuptools python3-yaml python3-plastex python3-unidecode
