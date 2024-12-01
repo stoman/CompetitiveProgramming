@@ -5,4 +5,4 @@ all: $(PROBLEMS)
 .PHONY: all $(PROBLEMS)
 
 $(PROBLEMS): 
-	verifyproblem -p config submissions $@
+	verifyproblem -p config submissions -- $@
