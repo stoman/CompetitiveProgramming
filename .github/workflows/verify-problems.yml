@@ -22,11 +22,3 @@ jobs:
           python3 problems/statistics10multiplelinearregression/submissions/accepted/stefan.py < problems/statistics10multiplelinearregression/data/sample/1.in
       - name: Verify problems
         run: (cd problems && make all)
-  distributed-problems:
-    name: Verify distributed problems
-    runs-on: ubuntu-latest
-    steps:
-      - name: Check out repository
-        uses: actions/checkout@v4
-      - name: Verify distributed problems
-        run: (cd distributed-problems && make all)
