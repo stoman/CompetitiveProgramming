@@ -29,6 +29,7 @@
 	"postCreateCommand": {
 		"rust version": "rustc --version",
 		"link rust": "sudo ln -s /usr/local/cargo/bin/rustc /usr/bin/rustc",
+		"link kotlin": "sudo ln -s /usr/local/sdkman/candidates/kotlin/current/bin/kotlinc /usr/bin/kotlinc",
 		"problemtools": "sudo apt-get update && sudo apt-get install -y libboost-all-dev && pip install git+https://github.com/kattis/problemtools@master"
 	}
 
