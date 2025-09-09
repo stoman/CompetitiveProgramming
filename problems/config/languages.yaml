@@ -1,0 +1,6 @@
+kotlin:
+    name: 'Kotlin'
+    priority: 250
+    files: '*.kt'
+    compile: '/usr/bin/kotlinc -language-version 1.8 -d {path}/ -- {files}'
+    run: '/usr/bin/kotlin -Dfile.encoding=UTF-8 -J-XX:+UseSerialGC -J-Xss64m -J-Xms{memlim}m -J-Xmx{memlim}m -cp {path}/ {Mainclass}Kt'
