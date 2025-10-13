@@ -81,7 +81,7 @@ jobs:
           session: ${{ secrets.AOC_SESSION }}
           starsRegex: '(?<=https:\/\/img\.shields\.io\/badge\/stars%20⭐-)[0-9]+(?=-yellow)(?=.*2024)'
       - name: Commit changes
-        uses: stefanzweifel/git-auto-commit-action@v6
+        uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: Update badges
           file_pattern: README.md
